@@ -20,4 +20,12 @@ This project is a robust frontend system for a Digital Banking application built
 - [x] Affichage du message d'erreur dans l'html.
 
 
+###  Phase 3: Models
+-  **Commit:** Création des models
+- [x] Création des models.
+- [x] Utilisation des models dans les services.
+- [x] Création d'un fichier de variables d'environement.
+- [x] Tester l'affichage des customers et la recherche et l'ajout.
+
+
 

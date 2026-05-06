@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
+import {Customer} from '../model/customer.model';
+import {evironment} from '../../environments/environment'
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +10,13 @@ import { Observable } from 'rxjs';
 export class CustomerService {
 
   constructor(private http:HttpClient){ }
-  public getCustomers():Observable<any> {
-    return this.http.get("http://localhost:8085/customers")
+  public getCustomers():Observable<Array<Customer>> {
+    return this.http.get<Array<Customer>>(evironment.backendHost+"/customers")
     }
+  public searchCustomers(Keyword : string):Observable<Array<Customer>> {
+    return this.http.get<Array<Customer>>(evironment.backendHost+"/customers/search?keyword="+Keyword)
+  }
+  public SaveCustomer(customer:Customer):Observable<Customer> {
+    return this.http.post<Customer>(evironment.backendHost+"/customers",customer)
+  }
 }
