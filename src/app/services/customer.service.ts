@@ -19,4 +19,7 @@ export class CustomerService {
   public SaveCustomer(customer:Customer):Observable<Customer> {
     return this.http.post<Customer>(evironment.backendHost+"/customers",customer)
   }
+  public deleteCustomer(id:number){
+    return this.http.delete(evironment.backendHost+"/customers/"+id);
+  }
 }
