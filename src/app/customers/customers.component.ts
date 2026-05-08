@@ -32,6 +32,7 @@ export class CustomersComponent implements OnInit{
       this.searchFormGroup=this.fb.group({
         keyword : this.fb.control("")
       });
+      console.log("composant customers chargé")
       this.handleSearchCustomers();
     }
 
