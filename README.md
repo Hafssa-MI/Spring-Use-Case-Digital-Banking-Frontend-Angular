@@ -35,4 +35,5 @@ This project is a robust frontend system for a Digital Banking application built
 - [x] CrosOrigin(*) ne marche plus dans le CustomerRestController au backend avec SpringSecurity on doit configurer corsconfiguration dans le SecurityConfig class dont on ajoute un @Bean pour CorsConfiguration
 - [x] Tester l'affichage des customers et la recherche et l'ajout.
 - [x] Création d'interceptor pour passer par l'admin dans les liens
+- [x] Utilisation des guards authenticate et authorize
 
