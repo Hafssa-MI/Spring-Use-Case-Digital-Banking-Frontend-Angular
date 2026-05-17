@@ -37,3 +37,11 @@ This project is a robust frontend system for a Digital Banking application built
 - [x] Création d'interceptor pour passer par l'admin dans les liens
 - [x] Utilisation des guards authenticate et authorize
 
+
+###  Phase 5: ChatbotAI 
+- **Commit:** Configuration du chatbot ai.
+- [x] Ajout du composant chat
+- [x] Création d'une page html contenant l'input field
+- [x] Liaison contenant laffichage de la reponse au fur et au mesure de la génération
+- [x] Utilisation du groq llm 
+
